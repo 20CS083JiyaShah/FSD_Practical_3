@@ -1,3 +1,4 @@
+Que - 3.a
 <!DOCTYPE html>
 <html>
 
@@ -44,19 +45,11 @@
           col2 = 'black';
         }
 
-
-
        // setting value of color 2 through let
-
-
 
        document.getElementById('var').style.color = col1;
 
-
-
        document.getElementById('let').style.color = col2;
-
-
 
        // changing color of h1 in html
       }, 500);
@@ -65,8 +58,38 @@
 
    }
 
-
-
  </script>
 </body>
 </html>
+
+
+3.b 
+
+1.	class Student{
+    constructor(rollno, firstname, lastname){
+        this.rollno=rollno;
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    fullName(){
+        return this.firstname+" "+this.lastname
+    }
+}
+
+const myName= new Student(83, "Jiya", "Shah")
+console.log(`Full name: ${myName.fullName()}.`)
+
+ 2.	class Student{
+    constructor(rollno, firstname, lastname){
+        this.rollno=rollno;
+        this.firstname=firstname;
+        this.lastname=lastname;
+    }
+    fullName(){
+        this.name=this.firstname+" "+this.lastname
+        console.log(`Full name: ${this.name}.`)
+}
+}
+
+const myName= new Student(83, "Jiya", "Shah");
+myName.fullName();
